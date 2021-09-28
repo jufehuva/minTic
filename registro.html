@@ -32,12 +32,12 @@
                     <input class="campoUsuario" type="text" id="campoUsuario" required pattern="[A-Za-z0-9]+" min="6" max="12" title="Solo numero y letras">
                 </div>
                 <div>
-                    <label for="password">Contraseña*</label>
-                    <input type="text" id="campo3"required>
+                    <label for="campoContrasena">Contraseña*</label>
+                    <input type="text" id="campoContrasena"required>
                 </div>
                 <div>
-                    <label for="confirmPassword">Confirmar contraseña*</label>
-                    <input type="text" id="campo4" required>
+                    <label for="confirmarContrasena">Confirmar contraseña*</label>
+                    <input type="text" id="confirmarContrasena" required>
                 </div>
                 <div>
                     <label for="correo">Correo electronico*</label>
@@ -56,7 +56,7 @@
                     <input type="text" id="campo8" required>
                 </div>
                 <div class="boton">
-                    <button type="submit" id="button_register2" onclick="validar_usuario(campoUsuario.value)">Registrar
+                    <button type="submit" id="button_register2" onclick="validar_datos(campoUsuario.value, campoContrasena.value)">Registrar
                     </button>
                 </div>
             </form>
