@@ -40,4 +40,29 @@ function validar_contrasena(string) {
 
 //module.export.validar_usuario = validar_usuario;
 //module.export.validar_contrasena = validar_contrasena;
-validar_usuario("DanielC05");
+validar_usuario("danielC00%");
+
+//VALIDACION 2
+var nombre = "Daniel!";
+
+var mayusc = /^[A-Z]*$/;
+var mayusc1 = /^[A-Z]*$/;
+var minusc = /^[a-z]*$/;
+var patron = /^[a-zA-Z]*$/;//El * es cualquier cantidad
+var numerico = /^[0-9]*$/;//De cero a 9 entre 1 y 3 caracteres
+var primeraMayusc = /^[A-Z][a-zA-Z]*$/;//La primera letra mayuscula
+var segundaMayusc = /^[A-Z][A-Z][a-zA-Z]*$/; //La primera y segunda letra mayuscula
+var especiales = /^[A-Z][a-zA-Z@-_!#]{1,12}$/;
+
+if (especiales.test(nombre)) {
+    console.log("1. "+especiales.test(nombre));
+}else{
+    console.log("1. No es mayuscula - search");
+}
+
+if (nombre.search(especiales)) {
+    console.log("2. "+nombre.search(especiales));
+}else{
+    console.log("2. No es mayuscula - search");
+}
+

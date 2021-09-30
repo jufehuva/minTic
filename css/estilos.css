@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'OCR A Extended', Helvetica, Arial, sans-serif;
 }
 input{
     border: 1px solid #9f9d9d;
@@ -78,7 +78,7 @@ h1{
 
 /*-------------------------- FORMULARIO ----------------------*/
 .fondo{
-    background-image: url(../image/fondo-inventario.jpg);
+    background-color: #17A29D;
     height: 720px;
 }
 .tituloRegistro{
@@ -93,10 +93,10 @@ h1{
     margin-right: auto;
     width: 290px;
     height: 420px;
-    border-radius: 7px;
-    border: 1px solid;
+    border-right: 7px solid white;
+    border-left: 7px solid white;
     padding: 10px;
-    background-color: rgba(245, 245, 245, 0.8);
+    box-shadow: 63px 64px 6px 36px #00000047;
 }
 
 .formulario form div{
@@ -125,6 +125,7 @@ h1{
 .campoUsuario:invalid{
     background: rgb(245, 130, 130);
 }
+
 
 
 
