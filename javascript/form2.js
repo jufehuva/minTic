@@ -18,20 +18,25 @@ function validar_usuario(string) {
                     contador++;
                     if (contador == string.length) {
                         alfanumericos =true;
+                        return true;
                     }
                 } 
             }
             for (let k = 0; k < mayusculas.length; k++) {
                 if (string[0] == mayusculas[k]) {
                     primeraLetra = true;
+                    return true;
                 }
             }
         }
+        return true;
         longitud = true;
+    }else{
+        return false;
     }
-    console.log("Solo alfanumericos: "+contador+" "+alfanumericos);
-    console.log("Primera letra MAYUSCULA: " + primeraLetra);
-    console.log("Mayor que 6 y menor que 16: " + longitud);
+    //console.log("Solo alfanumericos: "+contador+" "+alfanumericos);
+    //console.log("Primera letra MAYUSCULA: " + primeraLetra);
+    //console.log("Mayor que 6 y menor que 16: " + longitud);
 }
 
 function validar_contrasena(string) {

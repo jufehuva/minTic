@@ -1,87 +1,66 @@
-var nombreCompleto;
+var nombreCompleto = document.getElementById('nombreCompleto');
 var campoUsuario = document.getElementById('campoUsuario');
 var campoContrasena = document.getElementById('campoContrasena');
-var confirmarContrasena;
-var correo;
-var confirmarCorreo;
-var telefono;
-var direccionResidencia;
+var confirmarContrasena = document.getElementById('confirmarContrasena');
+var correo = document.getElementById('correo');
+var confirmarCorreo = document.getElementById('confirmarCorreo');
+var telefono = document.getElementById('telefono');
+var direccionResidencia = document.getElementById('direccionResidencia');
 
-var validacionUsuario="abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789";
-var caracteresEspeciales ="!@#-_";
-var mayusculas = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
-var numeros="0123456789";
+var datosCompletos = [];
+datosCompletos.push(nombreCompleto);
+datosCompletos.push(campoUsuario);
+datosCompletos.push(campoContrasena);
+datosCompletos.push(confirmarContrasena);
+datosCompletos.push(correo);
+datosCompletos.push(confirmarCorreo);
+datosCompletos.push(telefono);
+datosCompletos.push(direccionResidencia);
+
+console.log(datosCompletos);
 
 function validar_datos(usuario, contrasena) {
     validar_usuario(usuario);
     validar_contrasena(contrasena);
-}
-
-function validar_usuario(usuario) {
-    var contador=0;
-    for (let i = 0; i < usuario.length; i++) {
-         console.log(usuario[i]);
-         for (let j = 0; j < validacionUsuario.length; j++) {
-            if (usuario[i] == validacionUsuario[j] ) {
-                console.log(true);
-                contador++;
-                true;
-            }
-            else{
-                false;
-            }
-         }
-     }
-     if (contador == usuario.length && usuario.length >=6 && usuario.length <=12 ) {
-        console.log(usuario); 
-        console.log("Usuario Valido");
-        true;
-     }else{
-         console.log("Usuario No valido");
-         false
-     }
-}
-
-
-function validar_contrasena(campoContrasena) {
-    var contador = 0;
-    var primerCaracter = campoContrasena[0];
-    var primeraMayuscula = false;
     
-    for (let i = 0; i < mayusculas.length; i++) {
-        if (mayusculas[i] == primerCaracter) {
-            primeraMayuscula = true;
-            true;
-            console.log("Mayuscula "+primerCaracter+" "+primeraMayuscula);
-        }else{
-            false;
-        }
-    }
-    if (primeraMayuscula == true && campoContrasena.length>=8 && campoContrasena.length <= 16) {
-        for (let j = 0; j < campoContrasena.length; j++) {
-            console.log(campoContrasena[j]);
-            for (let k = 0; k < caracteresEspeciales.length; k++) {
-                if (campoContrasena[j] == caracteresEspeciales[k]) {
-                    contador++;
-                    console.log(contador);
-                    true;
-                }else{
-                    false;
-                }
-                
-            }
-            
-        }
-    }
-    if (contador>0) {
-        console.log("Contrasena valida");
-        true;
-    }else{
-        console.log("Contrasena invalida");
-        false;
-    }
-
-
 }
-//module.exports.validar_contrasena = validar_contrasena;
+
+function validar_usuario(string) {
+    var alfanumerico = /^[A-Z][a-zA-Z0-9]{6,12}$/
+    //console.log(string.search(alfanumerico));
+
+    if (alfanumerico.test(string)) {
+        //console.log("Test contiene solo caracteres alfanuméricos");
+        //console.log("Usuario valido");
+        return true;
+    }else{
+        //console.log(0);
+        //console.log("Usuario invalido");
+        return false;
+    }
+}
+
+function validar_contrasena(string) {
+    var validacion = /^[A-Z][a-zA-Z!@#-_]{8,16}/
+
+    if (validacion.test(string)) {
+        //console.log("Contrasena valida");
+        return true;
+    }else{
+        //console.log("Contrasena invalida");
+        return false;
+    }
+}
+/* REGISTRO 2 */
+function ordenarArreglo_Apellido(arreglo) {
+    
+}
+
+function retornarRegistroMedio(args) {
+    
+}
+
+
 //module.exports.validar_usuario = validar_usuario;
+//module.exports.validar_contrasena = validar_contrasena;
+
