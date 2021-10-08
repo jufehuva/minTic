@@ -1,28 +1,42 @@
-var nombreCompleto = document.getElementById('nombreCompleto');
-var campoUsuario = document.getElementById('campoUsuario');
-var campoContrasena = document.getElementById('campoContrasena');
-var confirmarContrasena = document.getElementById('confirmarContrasena');
-var correo = document.getElementById('correo');
-var confirmarCorreo = document.getElementById('confirmarCorreo');
-var telefono = document.getElementById('telefono');
-var direccionResidencia = document.getElementById('direccionResidencia');
-
-var datosCompletos = [];
-datosCompletos.push(nombreCompleto);
-datosCompletos.push(campoUsuario);
-datosCompletos.push(campoContrasena);
-datosCompletos.push(confirmarContrasena);
-datosCompletos.push(correo);
-datosCompletos.push(confirmarCorreo);
-datosCompletos.push(telefono);
-datosCompletos.push(direccionResidencia);
-
-console.log(datosCompletos);
+var nombreCompleto;
+var campoUsuario ;
+var campoContrasena;
+var confirmarContrasena;
+var campoCorreo;
+var confirmarCorreo;
+var telefono;
+var direccionResidencia;
+var lista = [];
 
 function validar_datos(usuario, contrasena) {
-    validar_usuario(usuario);
-    validar_contrasena(contrasena);
+    /* FUNCIONES */
+    //validar_usuario(usuario);
+    //validar_contrasena(contrasena);
+
+    /* ARRAY */
+    nombreCompleto = document.getElementById('nombreCompleto').value;
+    campoUsuario = document.getElementById('campoUsuario').value;
+    campoContrasena  = document.getElementById('campoContrasena').value;
+    confirmarContrasena = document.getElementById('confirmarContrasena').value;
+    campoCorreo = document.getElementById('campoCorreo').value;
+    confirmarCorreo = document.getElementById('confirmarCorreo').value;
+    telefono = document.getElementById('telefono').value;
+    direccionResidencia = document.getElementById('direccionResidencia').value;
+   
+    lista.push({
+        nombre:nombreCompleto,
+        usuario:campoUsuario,
+        contrasena:campoContrasena,
+        contrasenaConf:confirmarContrasena,
+        correo:campoCorreo,
+        correoConf:confirmarCorreo,
+        telefono:telefono,
+        direccion:direccionResidencia
+    });
     
+    console.log(lista);
+    //console.log('hola');
+
 }
 
 function validar_usuario(string) {
@@ -51,6 +65,7 @@ function validar_contrasena(string) {
         return false;
     }
 }
+
 /* REGISTRO 2 */
 function ordenarArreglo_Apellido(arreglo) {
     

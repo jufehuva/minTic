@@ -22,69 +22,32 @@ input{
     background: rgba(0, 0, 0, 0.938);
     transition: all 0.5s ease;
 }
-*[id="button_register"]{
-    color: white;
-    border: 1px solid rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0);
-    cursor: pointer;
-    width: 100%;
-}
-*[id="button_register"]:hover{
-    color: white;
-    border: 1px solid black;
-    background: rgba(0, 0, 0, 0.938);
-    transition: all 0.5s ease;
-}
-.botonRegistro{
-    color: black;
-    border: 1px solid rgba(0, 0, 0, 0);
-    background-color: white;
-    cursor: pointer;
-    width: 120px;
-    margin: 5px;
-    height: 39px;
-    border-radius: 5px;
-    font-size: 19px;
-}
-.botonRegistro:hover{
-    color: white;
-    border: 1px solid black;
-    background: chocolate;
-    transition: all 0.5s ease;
-}
 
 
 /*------------------------- MENU ---------------------  */
-.menu{
-    background-color: rgba(209, 209, 209, 0.397);
-    /* border: 1px solid black; */
-
-}
-.barra{
-    display: flex;
-    width: 100%;
-    height: 50px;
+nav{
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
+    background: rgba(23,162,157,1);
 }
-
-
 h1{
     text-align: center;
-    margin-top: 20px;
 }
-
+.botonRegistro{
+    height: 40px;
+    width: 120px;
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.botonRegistro:hover{
+    background-color: black;
+    color: #fff;
+}
 /*-------------------------- FORMULARIO ----------------------*/
-.fondo{
-    background-color: #17A29D;
-    height: 720px;
-}
+
 .tituloRegistro{
-    margin-top: 20px;
-    margin-bottom: 10px;
     text-align: center;
+    padding: 15px 0px 15px 0px;
 }
 .formulario{
     display: flex;
@@ -93,8 +56,10 @@ h1{
     margin-right: auto;
     width: 290px;
     height: 420px;
-    border-right: 7px solid white;
-    border-left: 7px solid white;
+    border-right: 7px solid #ccc;
+    border-left: 7px solid #ccc;
+    border-top: 1px solid  rgb(231, 231, 231);
+    border-bottom: 1px solid  rgb(231, 231, 231);
     padding: 10px;
     box-shadow: 63px 64px 6px 36px #00000047;
 }
@@ -124,6 +89,20 @@ h1{
 }
 .campoUsuario:invalid{
     background: rgb(245, 130, 130);
+}
+/* CONTENIDO */
+.contenido{
+    padding: 0px 30px 0px 30px;
+}
+/* FOOTER */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    color: #000;
+    background-color: rgba(23,162,157,1);
 }
 
 
