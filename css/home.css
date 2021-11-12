@@ -1,111 +1,42 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'OCR A Extended', Helvetica, Arial, sans-serif;
+.menu{
+    display: grid;
+    justify-content: center;
 }
-input{
-    border: 1px solid #9f9d9d;
-    padding: 2px 0px 2px 2px;
-   
-}
-*[id="button_register2"]{
-    margin-top: 20px;
-    cursor: pointer;
-    border-radius: 7px;
-    border: 1px solid gray;
-    transition: all 0.5s ease;
-    background: rgba(134, 134, 134, 0.849) ;
-}
-*[id="button_register2"]:hover{
-    color: white;
-    border: 1px solid black;
-    background: rgba(0, 0, 0, 0.938);
-    transition: all 0.5s ease;
-}
+.menu .nav{
+    background-color: chocolate;
+    border-radius: 10px;
+    overflow: hidden;
 
-
-/*------------------------- MENU ---------------------  */
-nav{
-    text-align: center;
-    background: rgba(23,162,157,1);
 }
-h1{
-    text-align: center;
-}
-.botonRegistro{
-    height: 40px;
-    width: 120px;
-    border: 0px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-.botonRegistro:hover{
-    background-color: black;
-    color: #fff;
-}
-/*-------------------------- FORMULARIO ----------------------*/
-
-.tituloRegistro{
-    text-align: center;
-    padding: 15px 0px 15px 0px;
-}
-.formulario{
-    display: flex;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 290px;
-    height: 420px;
-    border-right: 7px solid #ccc;
-    border-left: 7px solid #ccc;
-    border-top: 1px solid  rgb(231, 231, 231);
-    border-bottom: 1px solid  rgb(231, 231, 231);
-    padding: 10px;
-    box-shadow: 63px 64px 6px 36px #00000047;
-}
-
-.formulario form div{
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.formulario form div input{
-    width: 99%;
-    border-radius: 5px;
-}
-.formulario form div label{
-    width: 100%;
-    font-size: 12px;
-}
-.formulario form button{
-    padding: 5px 15px 5px 15px;
-}
-.boton{
-    text-align: center;
-    margin-top: 20px;
-}
-.campoUsuario:valid{
-    background: rgb(200, 230, 200);
-}
-.campoUsuario:invalid{
-    background: rgb(245, 130, 130);
-}
-/* CONTENIDO */
-.contenido{
-    padding: 0px 30px 0px 30px;
-}
-/* FOOTER */
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 30px;
-    width: 100%;
+.nav a{
     color: #000;
-    background-color: rgba(23,162,157,1);
 }
+.nav a:hover{
+    background-color: black;
+    color: chocolate;
+}
+.menuLateral{
+    /* border: 1px solid black; */
+    width: 150px;
+    height: 80vh;
+    background-color: darkgray;
 
-
-
-
-
+}
+.listaHead{
+    background-color: #ccc;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.lista{
+    list-style: none;
+    padding: 0px;
+    width: 150px;
+    /* border: 1px solid red; */
+}
+.lista li a:hover{
+    background-color: #ccc;
+}
+.titulo{
+    text-align: center;
+}

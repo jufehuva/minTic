@@ -2,6 +2,19 @@
     display: grid;
     justify-content: center;
 }
+.menu .nav{
+    background-color: chocolate;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.nav a{
+    color: #000;
+}
+.nav a:hover{
+    background-color: black;
+    color: chocolate;
+}
 .contenedor{
     padding-top: 10%;
     position: relative;
