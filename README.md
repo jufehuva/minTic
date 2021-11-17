@@ -1,1 +1,1 @@
-# minTic
+# min-tic
