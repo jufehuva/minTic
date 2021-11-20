@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let operaciones=[];
 let balance=0;
 
@@ -18,7 +17,6 @@ const estaMiMetaCumplida=()=>{}
 module.exports.registrarMetaAhorro=registrarMetaAhorro;
 module.exports.estaMiMetaCumplida=estaMiMetaCumplida;
 module.exports.registrarOperacion=registrarOperacion;
-=======
 let operaciones = [];
 let balance = 0;
 function parametros(params) {
@@ -52,4 +50,3 @@ const registrarMetaAhorro=(meta)=>{
 const estaMiMetaCumplida=()=>{
 
 }
->>>>>>> 4a5526c28d7734dfc46cdeb92b2097aa7543571a
